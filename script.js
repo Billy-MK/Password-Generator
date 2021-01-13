@@ -9,6 +9,7 @@ function generatePassword() {
     var specialCharacters =  "\" !#$%&'()*+,-./:;<=>?@[\\]^_`{|}~".split("");
     var numbers = "0123456789".split("");
     var includedCharacters = [];
+    var password = "";
     
     if (lowerCaseConfirm == true) {
         includedCharacters.push(...lowerCase);
@@ -22,4 +23,8 @@ function generatePassword() {
     if (specialCharactersConfirm == true) {
         includedCharacters.push(...specialCharacters);
     }
+    for (i = 0; i <= length; i++) {
+        password += (includedCharacters[Math.floor(Math.random() * includedCharacters.length)]);
+    }
+    document.getElementById("password").innerHTML = password;
 }
