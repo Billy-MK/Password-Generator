@@ -1,0 +1,11 @@
+/* Some simple custom css for the password */
+
+.password {
+    height: 300px;
+    border: 2px rgb(100, 100, 100) dashed;
+    color: rgb(63, 0, 0);
+    font-size: 40px;
+    font-weight: bolder;
+    overflow: auto;
+    word-wrap: break-word;
+}

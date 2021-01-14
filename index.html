@@ -6,7 +6,7 @@
     <title>Document</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel ="stylesheet" href="./style.css">
+    <link rel ="stylesheet" href="./assets/css/style.css">
 
 </head>
 
@@ -14,6 +14,7 @@
     <div class="container mt-5" style="border: 1px black solid;">
         <header class="row">
             <div class="col-sm-12">
+                <!-- Header -->
                 <h1 class="text-center">Password Generator</h1>
             </div>
         </header>
@@ -30,19 +31,21 @@
                 &nbsp;
             </div>
             <div class="col-sm-10">
-                <p class="text-center pt-5 password" id="password">Your Secure Password</p>
+                <!-- This is where the password will be generated -->
+                <p class="text-center pt-3 password" id="password">Your Secure Password</p>
             </div>
         </section>
         <section class="row m-2">
             <div class="col-md-12 text-center">
+                <!-- Button which runs javascript function to generate a new password -->
                 <button class="btn btn-primary btn-lg" onclick="generatePassword();">Click me</button>
             </div>
         </section>
     </div>
 
-    <!---- Bootstrap Javascript -->
+    <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <!-- Custom Javascript -->
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
